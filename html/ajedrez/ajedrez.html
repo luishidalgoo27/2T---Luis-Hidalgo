@@ -4,43 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajedrez tablas</title>
+    <link rel="stylesheet" href="ajedrez.css">
 </head>
-<style>
-    body {
-      overflow: hidden;
-      background-color: chocolate;
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     
-    }
-
-    img{
-        width: 90px;
-        height: 100px;
-    }
-    
-    table {
-      border-collapse: collapse;
-      border-color: black;
-      border: 25px solid black;
-    }
-
-    td {
-      border: 3px solid black;
-      width: 100px;
-      height: 100px;
-      text-align: center;
-    }
-    .beis{
-        background-color: burlywood;
-    }
-    .marron{
-        background-color: brown;
-    }
-</style>
-
 <script>
     let piezaSeleccionada = null;
         function moverPieza(celda) {
@@ -59,6 +24,7 @@
   </script>
 
 <body>
+    <div class="tabla">
     <table>
          <!-- Fila 1 -->
     <tr>
@@ -213,6 +179,94 @@
         </td>
       </tr>
     </table>
+    
+    <br>
+    <br>
+
+<!-- LAYOUT FLUID -->
+<!-- Fila 1 -->
+<div>
+    <div class="beis"><img src="images/torren.png"></div>
+    <div class="marron"><img src="images/caballon.png"></div>
+    <div class="beis"><img src="images/alfiln.png"></div>
+    <div class="marron"><img src="images/reinan.png"></div>
+    <div class="beis"><img src="images/reyn.png"></div>
+    <div class="marron"><img src="images/alfiln.png"></div>
+    <div class="beis"><img src="images/caballon.png"></div>
+    <div class="marron"><img src="images/torren.png"></div>
+<!-- Fila 2 -->
+<div>
+    <div class="marron"><img src="images/peonn.png"></div>
+    <div class="beis"><img src="images/peonn.png"></div>
+    <div class="marron"><img src="images/peonn.png"></div>
+    <div class="beis"><img src="images/peonn.png"></div>
+    <div class="marron"><img src="images/peonn.png"></div>
+    <div class="beis"><img src="images/peonn.png"></div>
+    <div class="marron"><img src="images/peonn.png"></div>
+    <div class="beis"><img src="images/peonn.png"></div>
+<!-- Fila 3 -->
+<div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+<!-- Fila 4 -->
+<div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+<!-- Fila 5 -->
+<div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+<!-- Fila 6 -->
+<div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+    <div class="marron"></div>
+    <div class="beis"></div>
+<!-- Fila 7 -->
+<div>
+    <div class="beis"><img src="images/peonb.png"></div>
+    <div class="marron"><img src="images/peonb.png"></div>
+    <div class="beis"><img src="images/peonb.png"></div>
+    <div class="marron"><img src="images/peonb.png"></div>
+    <div class="beis"><img src="images/peonb.png"></div>
+    <div class="marron"><img src="images/peonb.png"></div>
+    <div class="beis"><img src="images/peonb.png"></div>
+    <div class="marron"><img src="images/peonb.png"></div>
+<!-- Fila 8 -->
+<div>
+    <div class="marron"><img src="images/torreb.png"></div>
+    <div class="beis"><img src="images/caballob.png"></div>
+    <div class="marron"><img src="images/alfilb.png"></div>
+    <div class="beis"><img src="images/reinab.png"></div>
+    <div class="marron"><img src="images/reyb.png"></div>
+    <div class="beis"><img src="images/alfilb.png"></div>
+    <div class="marron"><img src="images/caballob.png"></div>
+    <div class="beis"><img src="images/torreb.png"></div>
+</div>
+
+
 
 </body>
 </html>

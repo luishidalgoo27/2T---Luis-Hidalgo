@@ -1,0 +1,56 @@
+body {
+    background-color: chocolate;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img{
+      width: 100px;
+      height: 100px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-color: black;
+    border: 25px solid black;
+  }
+
+  td {
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  .beis{
+      background-color: burlywood;
+  }
+  .marron{
+      background-color: brown;
+  }
+
+  div.tabla{
+    float: left;
+    padding: 10px;
+  }
+
+
+  div.marron{
+    float: inline-start;
+    background: brown;
+    height: 100px;
+    width: 100px;
+  }
+
+  div.beis{
+    float: inline-start;
+    background: burlywood;
+    height: 100px;
+    width: 100px;
+  }
+
+  div.fixed{
+    position: static;
+    
+  }
