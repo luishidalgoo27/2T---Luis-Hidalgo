@@ -7,6 +7,7 @@
 </head>
 <style>
     body {
+      overflow: hidden;
       background-color: chocolate;
       margin-top: 10px;
       display: flex;
@@ -39,157 +40,175 @@
         background-color: brown;
     }
 </style>
+
+<script>
+    let piezaSeleccionada = null;
+        function moverPieza(celda) {
+            if (piezaSeleccionada) {
+        // Mover la pieza a la celda seleccionada
+        celda.appendChild(piezaSeleccionada);
+        piezaSeleccionada = null;
+    } else {
+        // Seleccionar la pieza
+        piezaSeleccionada = celda.firstElementChild;
+            if (piezaSeleccionada) {
+        celda.removeChild(piezaSeleccionada);
+            }
+        }
+    }
+  </script>
+
 <body>
     <table>
          <!-- Fila 1 -->
     <tr>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/torren.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/caballon.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/alfiln.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/reinan.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/reyn.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/alfiln.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/caballon.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/torren.png">
         </td>
       </tr>
       <!-- Fila 2 -->
       <tr>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonn.png">
         </td>
       </tr>
       <!-- Fila 3 -->
       <tr>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
       </tr>
       <!-- Fila 4 -->
       <tr>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
       </tr>
       <!-- Fila 5 -->
       <tr>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
       </tr>
       <!-- Fila 6 -->
       <tr>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
-        <td class="marron"></td>
-        <td class="beis"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
+        <td class="marron" onclick="moverPieza(this)"></td>
+        <td class="beis" onclick="moverPieza(this)"></td>
       </tr>
       <!-- Fila 7 -->
       <tr>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/peonb.png">
         </td>
       </tr>
       <!-- Fila 8 -->
       <tr>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/torreb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/caballob.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/alfilb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/reinab.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/reyb.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/alfilb.png">
         </td>
-        <td class="marron">
+        <td class="marron" onclick="moverPieza(this)">
             <img src="images/caballob.png">
         </td>
-        <td class="beis">
+        <td class="beis" onclick="moverPieza(this)">
             <img src="images/torreb.png">
         </td>
       </tr>
