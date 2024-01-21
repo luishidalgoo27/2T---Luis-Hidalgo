@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #e41a2c;
+    }
+
+    .flag {
+      width: 300px;
+      height: 200px;
+      position: relative;
+    }
+
+    .rectangle {
+      width: 100px;
+      height: 200px;
+      background-color: #1d7326;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .crescent {
+      width: 80px;
+      height: 80px;
+      background-color: #e41a2c;
+      border-radius: 50%;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <div class="rectangle"></div>
+    <div class="crescent"></div>
+  </div>
+</body>
+</html>
