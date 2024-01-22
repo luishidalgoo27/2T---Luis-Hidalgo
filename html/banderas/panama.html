@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panama</title>
+  <style>
+ h1{
+  font-size: 3rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  font-size: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.bandera {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.rojo {
+  width: 300px;
+  height: 200px;
+  background-color: #c01f40;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.blanco1 {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  
+}
+.blanco2 {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  
+}
+.azul {
+  width: 300px;
+  height: 200px;
+  background-color: #4264b1;
+  position: absolute;
+  bottom: 0%;
+}
+
+.estrella1 {
+      width: 100px;
+      height: 100px;
+      background: #c01f40; /* Verde */
+      position: absolute;
+      top: 22.5%;
+      left: 22.5%;
+      transform: translate(-50%, -50%);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      position: absolute;
+      
+    }
+.estrella2 {
+      width: 100px;
+      height: 100px;
+      background: #4264b1; /* Verde */
+      position: absolute;
+      bottom: 0%;
+      right: 8%;
+      transform: translate(-50%, -50%);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      position: absolute;
+      
+    }
+
+</style>
+  
+</head>
+<body>
+  <h1>Panama</h1>
+  <h2>bandera base para que la uses en las tuyas</h2>
+
+  <div class="contenedor">
+  <div class="bandera">
+    <div class="blanco1"></div>
+    <div class="blanco2"></div>
+    <div class="rojo"></div>
+    <div class="azul"></div>
+    <div class="estrella1"></div>
+    <div class="estrella2"></div>
+  </div>
+</div> 
+</body>
+</html>
