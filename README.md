@@ -4,11 +4,7 @@
 
 ### 1. Tema 08:
 - En el tema 8 hicimos...
-- Para iniciarnos en git hicimos una prueba tipica de hola mundo.
-- 
-    ```markdown
-    [Hola Mundo](tema08/holamundo/holamundo)
-- También hicimos un ejercicio de actividad de dibujos con varias figuras.
+- Hicimos un ejercicio de actividad de dibujos con varias figuras.
     ```markdown
     [Figuras](tema08/actividad_dibujos/)
 ![medy](images/figuras.png)
