@@ -26,4 +26,4 @@
 ![medy](images/posicionamientos.png)
 
 # Conclusiones
-- Esté es el repositorio de clase de Luis Hidalgo Santiago alumno de 1º de DAW en Medac.
+Esté es el repositorio de clase de Luis Hidalgo Santiago alumno de 1º de DAW en Medac.
