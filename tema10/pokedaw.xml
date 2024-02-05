@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="pokedaw.css" type="text/css"?>
-<!DOCTYPE pokedex SYSTEM "pokedaw.dtd"> 
+<!DOCTYPE pokedex
+[ <!ELEMENT pokedex (pokemon+)>
+<!ELEMENT pokemon (nombre, foto, descripcion, tipo, genero, estado)>
+<!ATTLIST pokemon tipo CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ATTLIST foto imagen CDATA #REQUIRED>
+]>
 
 <pokedex>
-<pokemon>
+<pokemon tipo = "rayo">
     <nombre>Pikachu</nombre>
     <foto imagen="pikachu"></foto>
     <descripcion>Pokemon tipo rayo </descripcion>

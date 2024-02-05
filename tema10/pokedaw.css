@@ -11,8 +11,19 @@ pokedex {
     flex-wrap: wrap;
 }
 
-pokemon{
-        background-image: url(images/fondocartaamarilla.png);
+pokemon[tipo = "rayo"]{
+        background-image: url(images/rayo.jpeg);
+        background-repeat: no-repeat;
+        width: 25vw;
+        height: 40vw;
+        margin: 2vw;
+        padding: 1vw;
+        font-size: 1.2em;
+        position: static;
+      }
+    
+      pokemon[tipo = "agua"]{
+        background-image: url(images/agua.jpeg);
         background-repeat: no-repeat;
         width: 30vw;
         height: 35vw;
@@ -21,10 +32,31 @@ pokemon{
         font-size: 1.2em;
       }
 
+      pokemon[tipo = "fuego"]{
+        background-image: url(images/fuego.jpg);
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 35vw;
+        margin: 2vw;
+        padding: 1vw;
+        font-size: 1.2em;
+      }
+
+      pokemon[tipo = "planta"]{
+        background-image: url(images/hoja.jpg);
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 35vw;
+        margin: 2vw;
+        padding: 1vw;
+        font-size: 1.2em;
+        position: absolute;
+      }
+
 nombre{
-    font-size: 2em;
-    padding: .1em;
-    text-align: center;
+    font-size: 3em;
+    padding: .6em;
+    text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -55,6 +87,8 @@ foto{
 foto[imagen="pikachu"]{
     background-image: url("images/pikachu.png");
     background-size: cover;
+    position: relative;
+    left: 100%;
 }
 foto[imagen="celestina"]{
     background-image: url("images/lacelestina.jpg");

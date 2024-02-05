@@ -1,9 +1,0 @@
-<!ELEMENT pokedex (pokemon+)>
-<!ELEMENT pokemon (nombre, foto, descripcion, tipo, genero, estado)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT foto (#PCDATA)>
-<!ELEMENT descripcion (#PCDATA)>
-<!ELEMENT tipo (#PCDATA)>
-<!ELEMENT genero (#PCDATA)>
-<!ELEMENT estado (#PCDATA)>
-<!ATTLIST foto imagen CDATA #REQUIRED>
