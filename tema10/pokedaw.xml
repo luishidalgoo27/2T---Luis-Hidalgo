@@ -5,7 +5,7 @@
 <pokedex>
 <pokemon>
     <nombre>Pikachu</nombre>
-    <foto imagen="images/pikachu"> </foto>
+    <foto imagen="pikachu"></foto>
     <descripcion>Pokemon tipo rayo </descripcion>
     <tipo>Rayo</tipo>
     <genero>Masculino</genero>
