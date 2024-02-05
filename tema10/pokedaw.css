@@ -1,0 +1,70 @@
+
+*{
+    margin: 0px; 
+    display:block;
+    box-sizing: border-box; 
+   }
+
+pokedex {
+    background-image: url(images/Fondo\ De\ Pantalla\ Samsung.jpeg) ; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+pokemon{
+        background-color: #f1f1f1;
+        opacity: 0.8;
+        width: 40vw;
+        height: 30vw;
+        margin: 2vw;
+        padding: 1vw;
+        font-size: 1.2em;
+        overflow: auto;
+      }
+
+nombre{
+    font-size: 2em;
+    padding: .1em;
+    text-align: center;
+}
+
+foto {
+    display: inline;
+    color: rgb(214, 137, 36);
+    font-size: 1.3em;
+}
+
+descripcion{
+    font-weight: bold;
+}
+
+tipo{
+    font-weight: 100;
+    font-size: .8em;
+    margin: .5em;
+}
+
+genero{
+    width: 50%;
+    height:75%;
+    float: left;
+    margin:  .5em;
+}
+
+foto[imagen="pikachu"]{
+    background-image: url("images/pikachu.png");
+    background-size: cover;
+}
+foto[imagen="celestina"]{
+    background-image: url("images/lacelestina.jpg");
+    background-size: cover;
+}
+foto[imagen="extranjero"]{
+    background-image: url("images/extranjero.jpg");
+    background-size: cover;
+}
+foto[imagen="1984"]{
+    background-image: url("images/1984.jpg");
+    background-size: cover;
+}
