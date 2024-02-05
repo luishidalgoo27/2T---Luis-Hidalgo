@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="pokedaw.css" type="text/css"?>
+
+<!DOCTYPE pokedex [
+    <!ELEMENT pokedex (pokemon+)>
+    <!ELEMENT pokemon (nombre, foto, descripcion, tipo, genero, estado)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT foto (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT estado (#PCDATA)>
+    <!ATTLIST foto imagen CDATA #REQUIRED>
+]>
+<pokedex>
+<pokemon>
+    <nombre> </nombre>
+    <foto imagen=""> </foto>
+    <descripcion> </descripcion>
+    <tipo> </tipo>
+    <genero> </genero>
+    <estado> </estado>
+</pokemon>
+
+
+
+
+
+
+</pokedex>
