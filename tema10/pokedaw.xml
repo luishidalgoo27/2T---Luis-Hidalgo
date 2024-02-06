@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="pokedaw.css" type="text/css"?>
 <!DOCTYPE pokedex
-[ <!ELEMENT pokedex (pokemon+)>
+[
+<!ELEMENT pokedex (pokemon+)>
 <!ELEMENT pokemon (nombre, foto, descripcion, tipo, genero, estado)>
 <!ATTLIST pokemon tipo CDATA #REQUIRED>
 <!ELEMENT nombre (#PCDATA)>
@@ -9,18 +10,389 @@
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT tipo (#PCDATA)>
 <!ELEMENT genero (#PCDATA)>
-<!ELEMENT estado (#PCDATA)>
+<!ELEMENT estado (habilidad, nivel, fuerza)>
+<!ELEMENT habilidad (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT fuerza (#PCDATA)>
 <!ATTLIST foto imagen CDATA #REQUIRED>
 ]>
-
 <pokedex>
-<pokemon tipo = "rayo">
-    <nombre>Pikachu</nombre>
-    <foto imagen="pikachu"></foto>
-    <descripcion>Pokemon tipo rayo </descripcion>
-    <tipo>Rayo</tipo>
-    <genero>Masculino</genero>
-    <estado>SemiNuevo</estado>
+<pokemon tipo = "tierra">
+    <nombre>Excadrill</nombre>
+    <foto imagen="excadrill"></foto>
+    <descripcion>Excadrill, el Pokémon subterráneo y forma evolucionada de Drilbur. Excadrill puede excavar túneles bajo 
+        tierra en forma de laberinto de más de 100 metros de longitud y es capaz de cortar placas de hierro con 
+        sus garras de acero. </descripcion>
+    <tipo>Tipo: Tierra</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Excavar</habilidad>
+    <nivel>Nivel: Nivel 45</nivel>
+    <fuerza>Fuerza: 600</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Charizard</nombre>
+    <foto imagen="charizard"></foto>
+    <descripcion> La figura de Charizard es la de un dragón erguido sobre sus dos patas traseras, 
+        que sostienen su peso. Posee unas poderosas alas y un abrasador aliento de fuego. 
+        También posee un predominante cuello y una poderosa cola terminada en una llama que arde con más 
+        fuerza si ha vivido duras batallas.</descripcion>
+    <tipo>Tipo: Fuego/Volador</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Mar Llamas</habilidad>
+    <nivel>Nivel: Nivel 36</nivel>
+    <fuerza>Fuerza: 78</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Bulbasur</nombre>
+    <foto imagen="bulbasur"></foto>
+    <descripcion>Un pequeño Pokémon con una semilla en su espalda que brota en una planta.
+        Bulbasaur es un Pokémon cuadrúpedo de color verde y manchas más oscuras de formas geométricas. 
+        Su cabeza representa cerca de un tercio de su cuerpo.
+    </descripcion>
+    <tipo>Tipo: Planta/Veneno</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Espesura</habilidad>
+    <nivel>Nivel: Nivel 16</nivel>
+    <fuerza>Fuerza: 49</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Squirtle</nombre>
+    <foto imagen="squirtle"></foto>
+    <descripcion>Su forma redondeada y las hendiduras que tiene le ayudan a reducir su resistencia al agua y le 
+        permiten nadar a gran velocidad. El caparazón de SQUIRTLE no sólo lo protege; su forma 
+        redondeada y sus hendiduras reducen su resistencia al agua y le permiten nadar más rápido.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Torrente</habilidad>
+    <nivel>Nivel: Nivel 16</nivel>
+    <fuerza>Fuerza: 48</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "tierra">
+    <nombre>Flygon</nombre>
+    <foto imagen="flygon"></foto>
+    <descripcion>Flygon es un Pokémon de tipo Tierra/Dragón introducido en la Tercera generación. Es de color Verde, 
+        pesa 82,0kg y mide 2,0m. Es la forma evolucionada de vibrava. Sus principales características son sus 100 
+        puntos de Ataque y Velocidad cada uno.</descripcion>
+    <tipo>Tipo: Tierra </tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Levitación</habilidad>
+    <nivel>Nivel: Nivel 52 </nivel>
+    <fuerza> Fuerza: 680</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Arcanine</nombre>
+    <foto imagen="arcanine"></foto>
+    <descripcion>Arcanine está basado en los shisa, criaturas míticas mezcla entre león y perro, 
+        cuyas estatuas se utilizan como guardianes contra los malos espíritus. 
+        Su llama puede alcanzar los 3000 °C. Su pelaje es suave, de color naranja a rayas negras y con 
+        una cola anaranjada, cercano al color blanco.</descripcion>
+    <tipo>Tipo: Fuego</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Intimidación</habilidad>
+    <nivel>Nivel: Nivel 45</nivel>
+    <fuerza>Fuerza: 95</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Venusaur</nombre>
+    <foto imagen="venusaur"></foto>
+    <descripcion>Venusaur tiene una flor enorme en el lomo que, según parece, 
+        adquiere unos colores muy vivos si está bien nutrido y le da mucho el sol. 
+        El aroma delicado de la flor tiene un efecto relajante en el ánimo de las personas.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Espesura</habilidad>
+    <nivel>Nivel: Nivel 16</nivel>
+    <fuerza>Fuerza: 49</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Vaporeon</nombre>
+    <foto imagen="vaporeon"></foto>
+    <descripcion>Vaporeon sufrió una mutación repentina y desarrolló aletas y branquias que le permiten vivir 
+        abajo del agua. Asimismo, este Pokémon tiene la habilidad de controlar las aguas. Su composición 
+        celular es muy parecida a la estructura molecular del agua. Vive cerca de ríos y mares y a veces lo 
+        toman por una sirena.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Absorber Agua</habilidad>
+    <nivel>Nivel: Nivel 30</nivel>
+    <fuerza>Fuerza: 85</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "tierra">
+    <nombre>Garchomp</nombre>
+    <foto imagen="garchomp"></foto>
+    <descripcion>Garchomp es un Pokémon de tipo Dragón/Tierra introducido en la Cuarta generación. Es de color 
+        Azul, pesa 95,0kg y mide 1,9m. Es la forma evolucionada de gabite. Su principal característica son sus 
+        130 puntos de Ataque.</descripcion>
+    <tipo>Tipo: Tierra</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Velo Arena</habilidad>
+    <nivel>Nivel: Nivel 50</nivel>
+    <fuerza>Fuerza: 700</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Charmander</nombre>
+    <foto imagen="charmander"></foto>
+    <descripcion>Charmander es un pequeño monstruo bípedo parecido a un lagarto. Sus características de fuego son 
+        resaltadas por su color de piel anaranjado y su cola, cuya punta está envuelta en llamas.Charmander y sus 
+        evoluciones, Charmeleon y Charizard, tienen una pequeña llama en la punta de sus colas desde que nacen.</descripcion>
+    <tipo>Tipo: Fuego</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Mar Llamas</habilidad>
+    <nivel>Nivel: Nivel 5 </nivel>
+    <fuerza>Fuerza: 300</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Oddish</nombre>
+    <foto imagen="oddish"></foto>
+    <descripcion>Oddish tiene una contextura especial, su cuerpo carece de brazos y es de forma esférica de color azul. 
+        Además posee largas hojas en su cabeza, las cuales cuando está enterrado en el suelo sobresalen pareciendo 
+        una planta común y corriente. Parece estar basado en algún tubérculo, como un rábano.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Clorofila</habilidad>
+    <nivel>Nivel: Nivel 21</nivel>
+    <fuerza>Fuerza: 350</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Gyarados</nombre>
+    <foto imagen="gyarados"></foto>
+    <descripcion>Gyarados es un Pokémon de tipo Agua/Volador introducido en la Primera generación. Es de color 
+        Azul, pesa 235,0kg y mide 6,5m. Es la forma evolucionada de magikarp. Es la contraparte de milotic.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Intimidación</habilidad>
+    <nivel>Nivel: Nivel 20</nivel>
+    <fuerza>Fuerza: 550</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "tierra">
+    <nombre>Golem</nombre>
+    <foto imagen="golem"></foto>
+    <descripcion>Golem es un Pokémon de tipo Roca/Tierra introducido en la Primera generación. Es de color Café, 
+        pesa 300,0kg y mide 1,4m. Es la forma evolucionada de graveler. Su principal característica son sus 
+        130 puntos de Defensa.</descripcion>
+    <tipo>Tipo: Tierra</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Corte Fuerte</habilidad>
+    <nivel>Nivel: Nivel 48</nivel>
+    <fuerza>Fuerza: 600</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Flareon</nombre>
+    <foto imagen="flareon"></foto>
+    <descripcion>Flareon es la evolución de Eevee. Una llama dentro de su cuerpo, enciende el aire que inhala y lo expulsa como 
+        fuego. HA: Flareon, el Pokémon flama. Flareon es la forma evolucionada de Eevee, el aire que emana es encendido 
+        por una flama dentro de su cuerpo y la expulsa como fuego.</descripcion>
+    <tipo>Tipo: Fuego</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Mar Llamas</habilidad>
+    <nivel>Nivel: Nivel 36</nivel>
+    <fuerza>Fuerza: 520</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Sceptile</nombre>
+    <foto imagen="sceptile"></foto>
+    <descripcion>Sceptile es un Pokémon de tipo Planta introducido en la Tercera generación. 
+        Es de color Verde, pesa 52,2kg y mide 1,7m. Es la forma evolucionada de grovyle. Su principal 
+        característica son sus 120 puntos de Velocidad.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Espesura</habilidad>
+    <nivel>Nivel: Nivel 36</nivel>
+    <fuerza>Fuerza: 580</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Blastoise</nombre>
+    <foto imagen="blastoise"></foto>
+    <descripcion>Es un Pokémon violento. Tiene reactores de agua en el caparazón, que le sirven para atacar con fuerza. 
+        Los chorros de agua que lanza por los tubos de su caparazón pueden atravesar el acero. Los chorros de agua 
+        que lanza por los tubos de su caparazón pueden atravesar el acero.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Torrente</habilidad>
+    <nivel>Nivel: Nivel 36</nivel>
+    <fuerza>Fuerza: 580</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "tierra">
+    <nombre>Rhyperior</nombre>
+    <foto imagen="rhyperior"></foto>
+    <descripcion>Rhyperior es un Pokémon de tipo Tierra/Roca introducido en la Cuarta generación. Es de color Gris, 
+        pesa 282,8kg y mide 2,4m. Es la forma evolucionada de rhydon. Su principal característica son sus 140 
+        puntos de Ataque.</descripcion>
+    <tipo>Tipo: Tierra</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Roca Sólida</habilidad>
+    <nivel>Nivel: Nivel 55</nivel>
+    <fuerza>Fuerza: 750
+    </fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Growlithe</nombre>
+    <foto imagen="glowlithe"></foto>
+    <descripcion>Un Pokémon afectuoso y leal por naturaleza. Para ahuyentar al enemigo, se pone a ladrar y a dar 
+        bocados. De naturaleza valiente y honrada, se enfrenta sin miedo a enemigos más grandes y fuertes. 
+        Patrullan su territorio en pareja.</descripcion>
+    <tipo>Tipo: Fuego</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Intimidación</habilidad>
+    <nivel>Nivel: Nivel 15</nivel>
+    <fuerza>Fuerza: 330</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Exeggutor</nombre>
+    <foto imagen="exeggutor"></foto>
+    <descripcion>EXEGGUTOR es originario del trópico. Cuando se expone a un sol intenso, le empiezan a crecer 
+        las cabezas. Hay quien dice que, cuando las cabezas caen al suelo, se unen para formar un EXEGGCUTE. 
+        Es originario del trópico.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Clorofila</habilidad>
+    <nivel>Nivel: Nivel 35</nivel>
+    <fuerza>Fuerza: 540</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Lapras</nombre>
+    <foto imagen="lapras"></foto>
+    <descripcion>Lapras es un Pokémon de tipo Agua/Hielo introducido en la Primera generación. Es de color Azul, 
+        pesa 220,0kg y mide 2,5m. Su principal característica son sus 130 puntos de PS.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Caparazón Grueso</habilidad>
+    <nivel>Nivel: Nivel 20</nivel>
+    <fuerza>Fuerza: 540</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "tierra">
+    <nombre>Sandslash</nombre>
+    <foto imagen="sandslash"></foto>
+    <descripcion>Sandslash está recubierto de duras púas que son partes endurecidas de la piel. Suele mudarlas 
+        una vez al año; debajo de las viejas púas crecen unas nuevas que las sustituyen. Sandslash puede 
+        enroscarse y convertirse en una bola de largas púas. En combate, este Pokémon hace retroceder a sus 
+        rivales clavándoselas.</descripcion>
+    <tipo>Tipo: Tierra</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Velo Arena</habilidad>
+    <nivel>Nivel: Nivel 40</nivel>
+    <fuerza>Fuerza: 550</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "fuego">
+    <nombre>Vulpix</nombre>
+    <foto imagen="vulpix"></foto>
+    <descripcion>Vulpix es un Pokémon de tipo Fuego introducido en la Primera generación. Es de color Café, 
+        pesa 9,9kg y mide 0,6m. Es la contraparte de growlithe. Sus principales características son sus 65 puntos 
+        de Defensa especial y Velocidad cada uno.</descripcion>
+    <tipo>Tipo: Fuego</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Mar Llamas</habilidad>
+    <nivel>Nivel: Nivel 15</nivel>
+    <fuerza>Fuerza: 300</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Bellsprout</nombre>
+    <foto imagen="bellsprout"></foto>
+    <descripcion>Bellsprout tiene un cuerpo delgado y flexible que le permite inclinarse y balancearse para esquivar 
+        los ataques. Este Pokémon escupe por la boca un fluido corrosivo capaz de hacer que se derrita hasta el 
+        hierro. Tiene un cuerpo delgado y flexible que le permite inclinarse y balancearse para evitar ataques.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Clorofila</habilidad>
+    <nivel>Nivel: Nivel 21</nivel>
+    <fuerza>Fuerza: 350</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "agua">
+    <nombre>Magikarp</nombre>
+    <foto imagen="magikarp"></foto>
+    <descripcion>MAGIKARP es el triste ejemplo de un POKéMON capaz únicamente de saltar y salpicar. Esta conducta 
+        llevó a científicos a estudiarlo en profundidad. MAGIKARP es prácticamente inútil en combate; sólo sirve 
+        para salpicar, y se le considera muy débil. Con todo, en realidad es un POKéMON muy práctico.</descripcion>
+    <tipo>Tipo: Agua</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Nado Rápido</habilidad>
+    <nivel>Nivel: Nivel 5</nivel>
+    <fuerza>Fuerza: 200</fuerza>
+    </estado>
+</pokemon>
+
+<pokemon tipo = "planta">
+    <nombre>Tangela</nombre>
+    <foto imagen="tangela"></foto>
+    <descripcion>Es una masa que todo lo enreda. Tiene el cuerpo cubierto con anchas cintas del tipo alga que se mueven cuando camina. 
+        Está envuelto en lianas azules. Nadie ha logrado ver el rostro que se oculta tras ellas.</descripcion>
+    <tipo>Tipo: Planta</tipo>
+    <genero>Género: Masculino/Femenino</genero>
+    <estado>
+    <habilidad>Habilidad: Clorofila</habilidad>
+    <nivel>Nivel: Nivel 22</nivel>
+    <fuerza>Fuerza: 365</fuerza>
+    </estado>
 </pokemon>
 
 </pokedex>

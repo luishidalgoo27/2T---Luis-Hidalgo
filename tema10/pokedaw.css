@@ -1,104 +1,186 @@
 *{
-    margin: 0px; 
-    display:block;
-    box-sizing: border-box; 
-   }
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    box-sizing: content-box;
+    font-weight: 500;
+    font-size: 20px;
+    color: yellow;
+    text-shadow: 3px 3px 5px blue;
+}
 
 pokedex {
-    background-image: url(images/Fondo\ De\ Pantalla\ Samsung.jpeg) ; 
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-pokemon[tipo = "rayo"]{
-        background-image: url(images/rayo.jpeg);
-        background-repeat: no-repeat;
-        width: 25vw;
-        height: 40vw;
-        margin: 2vw;
-        padding: 1vw;
-        font-size: 1.2em;
-        position: static;
-      }
-    
-      pokemon[tipo = "agua"]{
-        background-image: url(images/agua.jpeg);
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 35vw;
-        margin: 2vw;
-        padding: 1vw;
-        font-size: 1.2em;
-      }
+pokemon[tipo = "tierra"]{
+    background-image: url(images/tierra.jpg);
+    justify-content: center;
+    text-align: center;
+    border: solid 15px burlywood;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
 
-      pokemon[tipo = "fuego"]{
-        background-image: url(images/fuego.jpg);
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 35vw;
-        margin: 2vw;
-        padding: 1vw;
-        font-size: 1.2em;
-      }
+pokemon[tipo = "agua"]{
+    background-image: url(images/agua.jpg);
+    justify-content: center;
+    text-align: center;
+    border: solid 15px skyblue;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
 
-      pokemon[tipo = "planta"]{
-        background-image: url(images/hoja.jpg);
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 35vw;
-        margin: 2vw;
-        padding: 1vw;
-        font-size: 1.2em;
-        position: absolute;
-      }
+pokemon[tipo = "planta"]{
+    background-image: url(images/hoja.jpg);
+    justify-content: center;
+    text-align: center;
+    border: solid 15px green;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+pokemon[tipo = "fuego"]{
+    background-image: url(images/fuego.jpg);
+    justify-content: center;
+    text-align: center;
+    border: solid 15px orangered;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
 
 nombre{
-    font-size: 3em;
-    padding: .6em;
-    text-align: left;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    margin: 10px;
+    font-size:40px;
+    font-weight: 800;
+    font-style: oblique;
 }
 
 descripcion{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    margin: 18px;
+    margin-top: 13px;
+    display: block;
+    color: yellow;
+    font-size: 12px;
 }
 
 tipo{
-    font-weight: 100;
-    font-size: .8em;
-    margin: .5em;
-}
-
-genero {
-    display: inline;
-    color: rgb(214, 137, 36);
-    font-size: 1.3em;
+    margin-top: 30px;
 }
 
 foto{
-    width: 250px;
-    height:250px;
-    float: none;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 260px;
+    height: 170px;
+    border: solid 5px whitesmoke;
 }
 
 foto[imagen="pikachu"]{
     background-image: url("images/pikachu.png");
-    background-size: cover;
-    position: relative;
-    left: 100%;
 }
-foto[imagen="celestina"]{
-    background-image: url("images/lacelestina.jpg");
-    background-size: cover;
+foto[imagen="charizard"]{
+    background-image: url("images/charizard.jpg");
 }
-foto[imagen="extranjero"]{
-    background-image: url("images/extranjero.jpg");
-    background-size: cover;
+foto[imagen="bulbasur"]{
+    background-image: url("images/bulbasur.png");
 }
-foto[imagen="1984"]{
-    background-image: url("images/1984.jpg");
-    background-size: cover;
+foto[imagen="arcanine"]{
+    background-image: url("images/arcanine.jpg");
 }
+foto[imagen="gyarados"]{
+    background-image: url("images/gyarados.jpg");
+}
+foto[imagen="raichu"]{
+    background-image: url("images/raichu.png");
+}
+foto[imagen="vaporeon"]{
+    background-image: url("images/vaporeon.jpg");
+}
+foto[imagen="venusaur"]{
+    background-image: url("images/venusaur.jpg");
+}
+foto[imagen="squirtle"]{
+    background-image: url("images/squirtle.jpeg");
+}
+foto[imagen="sceptile"]{
+    background-image: url("images/sceptile.png");
+}
+foto[imagen="charmander"]{
+    background-image: url("images/charmander.jpg");
+}
+foto[imagen="glowlithe"]{
+    background-image: url("images/growlithe.jpg");
+}
+foto[imagen="flareon"]{
+    background-image: url("images/flareon.png");
+}
+foto[imagen="vulpix"]{
+    background-image: url("images/vulpix.png");
+}
+foto[imagen="blastoise"]{
+    background-image: url("images/blastoise.jpg");
+}
+foto[imagen="lapras"]{
+    background-image: url("images/lapras.png");
+}
+foto[imagen="magikarp"]{
+    background-image: url("images/magikarp.jpg");
+}
+foto[imagen="oddish"]{
+    background-image: url("images/oddish.jpg");
+}
+foto[imagen="exeggutor"]{
+    background-image: url("images/exeggutor.jpg");
+}
+foto[imagen="bellsprout"]{
+    background-image: url("images/bellsprout.jpg");
+}
+foto[imagen="tangela"]{
+    background-image: url("images/tangela.jpg");
+}
+foto[imagen="excadrill"]{
+    background-image: url("images/excadrill.jpg");
+}
+foto[imagen="flygon"]{
+    background-image: url("images/flygon.jpg");
+}
+foto[imagen="garchomp"]{
+    background-image: url("images/garchomp.png");
+}
+foto[imagen="golem"]{
+    background-image: url("images/golem.jpg");
+}
+foto[imagen="rhyperior"]{
+    background-image: url("images/rhyperior.jpg");
+}
+foto[imagen="sandslash"]{
+    background-image: url("images/sandslash.jpg");
+}
+
