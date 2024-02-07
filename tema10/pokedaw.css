@@ -5,8 +5,8 @@
     box-sizing: content-box;
     font-weight: 500;
     font-size: 20px;
-    color: yellow;
-    text-shadow: 3px 3px 5px blue;
+    color: #ffcd00;
+    text-shadow: 3px 3px 5px #356abc;
 }
 
 pokedex {
@@ -86,7 +86,7 @@ descripcion{
     margin: 18px;
     margin-top: 13px;
     display: block;
-    color: yellow;
+    color: #ffcd00;
     font-size: 12px;
 }
 
