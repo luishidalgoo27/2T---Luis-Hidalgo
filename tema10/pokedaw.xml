@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="pokedaw.css" type="text/css"?>
-<!DOCTYPE pokedex
+<!-- <!DOCTYPE pokedex
 [
 <!ELEMENT pokedex (pokemon+)>
 <!ELEMENT pokemon (nombre, foto, descripcion, tipo, genero, estado)>
@@ -15,7 +15,9 @@
 <!ELEMENT nivel (#PCDATA)>
 <!ELEMENT fuerza (#PCDATA)>
 <!ATTLIST foto imagen CDATA #REQUIRED>
-]>
+]> --> 
+
+<?xml-model href="pokedaw.xsd"?>
 <pokedex>
 <pokemon tipo = "tierra">
     <nombre>Excadrill</nombre>
