@@ -1,0 +1,17 @@
+<!ELEMENT gimnasio (socio+)>
+<!ELEMENT socio (nombre,edad,sexo,email,telefono,direccion,fecha_inscripcion,plan?,estado,deporte+)>
+<!ATTLIST socio id NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (calle,ciudad,provincia,codigo_postal)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT fecha_inscripcion (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT deporte (#PCDATA)>
