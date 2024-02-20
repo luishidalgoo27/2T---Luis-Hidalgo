@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="David Pelaez, Luis Hidalgo, Alejandro Quintero, Antonio Reyes, Rafael Lopez">
+    <meta name="descripcion" content="redes informaticas, servidor, router, switch, conexiones, medios, enlace, aplicacion">
+    <title>Examen Sistemas</title>
+    <link rel="stylesheet" href="../css/content.css">
+</head>
+<body>
+
+    <header>
+        <h1><img src="../images/examenfuentes.png" alt="Logo de Sistemas Informaticos" ></h1>
+    </header>
+
+<nav class="navbar">
+    <a href="../index.html">INICIO</a>
+    <a href="tema09.html">REDES INFORMATICAS</a>
+    <a href="tema10.html">DIRECCIONES DE RED</a>
+    <a href="tema11.html">CONFIGURACION DE REDES</a>
+    <a href="tema11_2.html">DNS Y DHCP</a>
+    <a href="tema12.html">INTERCONEXIONES DE REDES</a>
+</nav>
+<script>
+    function cambiarColorincorrecta(elemento) {
+        elemento.classList.add("incorrecta");
+        setTimeout(function() {
+            elemento.classList.remove("incorrecta");
+        }, 2000); // Cambiar al valor deseado de milisegundos (2000ms = 2 segundos)
+    }
+    function cambiarColorcorrecta(elemento) {
+        elemento.classList.add("correcta");
+        setTimeout(function() {
+            elemento.classList.remove("correcta");
+        }, 100000); // Cambiar al valor deseado de milisegundos (3000ms = 3 segundos)
+    }
+</script>
+<section class="fondomid">
+    <div class="content">
+        <h1 id="inicio">¡Comprueba tu conocimiento!</h1>
+        <h2>Redes Informáticas</h2>
+        <h3>¿Qué es una red informática? Componentes.</h3>
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Conjunto de dispositivos electrónicos interconectados que comparten recursos y datos entre sí.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        TCP/IP
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Protocolos de Red
+        </button>
+        <h3>¿Qué es una red informática? Topologías de red y qué tipos hay.</h3>
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Híbrida
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Área Global (GAN)
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        HTTP/HTTPS
+        </button>
+
+        <h3>¿Qué es una red informática? Tipo de de redes según su tamaño.</h3>
+        
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Red de Área Personal (PAN)
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Híbrida
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Cable de Cobre
+        </button>
+
+        <h3>¿Qué es una red informática? Medios de transmisión en redes informáticas.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Fibra Óptica
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Satélites
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Microondas Terrestres
+        </button>
+
+        <h3>¿Qué es una red informática? ¿Qué es un mapa físico y lógico de una red?</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Un mapa físico de una red es una representación visual que muestra la disposición física y la ubicación de los dispositivos y componentes en una red.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            OSI tiene más capas y una abstracción más detallada, mientras que TCP/IP es más ampliamente adoptado y se utiliza de manera extensa en Internet. Ambos modelos son útiles para entender y describir las redes, y a menudo se usan juntos.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Ondas de Radio
+        </button>
+        <br>
+
+        <h2>Direcciones de Red</h2>
+        <h3>Explica el formato y partes de una dirección IPv4.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Una serie de números binarios que identifica un dispositivo en una red.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un nombre de dominio que se utiliza para acceder a un sitio web.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un programa que permite navegar por internet.
+        </button>
+
+        <h3>Clases de Redes. Uso. Direcciones especiales.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Red troncal: Es la red principal de alta velocidad que conecta las diferentes redes de una organización.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Red de distribución: Interconecta redes de acceso y redes troncales.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Red de acceso: Permite la conexión de dispositivos finales a la red.
+        </button>
+
+        <h3>Qué son las subredes. Explícalas.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Un método para dividir una red IP en dos o más redes más pequeñas.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Una red de computadoras que está conectada a internet.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un dispositivo que se utiliza para conectar dos redes diferentes.
+        </button>
+
+        <h3>Explica la IP pública e IP privada.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Una IP privada solo es válida dentro de una red local.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Una IP pública es asignada por un proveedor de internet.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Una IP pública es única en todo el mundo.
+        </button>
+        <br>
+
+        <h2>Configuración de Redes</h2>
+        <h3>Modelo OSI. Comparativa con TCP/IP</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        OSI tiene más capas y una abstracción más detallada, mientras que TCP/IP es más ampliamente adoptado y se utiliza de manera extensa en Internet. Ambos modelos son útiles para entender y describir las redes, y a menudo se usan juntos.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        El Modelo TCP/IP es un conjunto de protocolos que sirve como base para la conectividad en Internet.
+        </button>
+        <br>
+
+        <h2>DNS y DHCP</h2>
+        <h3>¿Qué es un servidor DNS?</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Un dispositivo que traduce los nombres de dominio legibles por humanos a direcciones IP numéricas.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un dispositivo que conecta diferentes redes entre sí.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un dispositivo que almacena archivos y programas para que los usuarios puedan acceder a ellos.
+        </button>
+
+        <h3>¿Qué es un servidor DCHP?</h3>
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Un servidor que asigna direcciones IP dinámicas a los dispositivos de una red.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un dispositivo que almacena archivos y datos para compartirlos en la red.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Un programa que permite navegar por internet.
+        </button>
+
+        <h3>¿Que formato tiene el nombre de un dominio en internet? ¿Cómo se gestiona los dominios en Internet?</h3>
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Puede contener letras minúsculas, mayúsculas, números y guiones bajos.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Solo puede contener letras minúsculas.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Puede contener cualquier carácter, incluyendo espacios y símbolos especiales.
+        </button>
+        <br>
+
+        <h2>Interconexiones de redes</h2>
+        <h3>Explica el procedimiento de encapsulamiento de datos.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+            Rodea los datos con la información 
+            de protocolo necesaria antes de que se una al tránsito de la red.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un aparato que gestiona las redes informáticas para que podamos acceder a la web del MEDAC
+            </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            No sé le preguntaré a ChatGPT
+        </button>
+
+        <h3>Qué es un switch. Características y uso.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+        Dispositivo de red que opera en la capa de enlace de datos, conecta múltiples dispositivos en una red local y facilita la comunicación entre ellos.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+        Dispositivo físico que opera en la capa de aplicación, su trabajo es encapsular datos.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            No lo entiendo
+        </button>
+
+        <h3>Qué es un router. Características y uso.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+            Un router es un dispositivo de red que opera en la Capa de Red (Capa 3) del modelo OSI.
+            Examina la dirección IP de destino de los paquetes.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un router no sirve para nada, el switch y el servidor se encargan de todo.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un router es un dispositivo de red que opera en la Capa 2 (OSI) examina la dirección MAC del destino.
+        </button>
+
+        <h3>Qué es un hub. Características y uso.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+            Un hub es un dispositivo de red que opera en la Capa Física (Capa 1) del modelo OSI, interconecta
+             múltiples dispositivos en una red local.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Es un dispositivo de red que compara la IPv8 pública con la privada
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Su función principal es amplificar y recibir señales de  todos los dispositivos conectados
+        </button>
+
+        <h3>Qué es un bridge. Características y uso.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+            Un bridge opera en la Capa de Enlace de Datos 
+            (Capa 2) del modelo OSI y se utiliza para interconectar dos segmentos de red local
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un bridge es un dispositivo que opera en la Capa de transmisión (Capa 3)
+            del modelo TCP/IP y se utiliza para transmitir paquetes.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un bridge opera en la Capa de aplicación 
+            del modelo OSI y se utiliza para interconectar dos segmentos en una WLAN
+        </button>
+
+        <h3>Qué es un firewall. Características y uso.</h3>
+
+        <button class="botonpreguntas" onclick="cambiarColorcorrecta(this)">
+            Un firewall está diseñado para proteger una red informática 
+            controlando y filtrando el tráfico que entra y sale de la red. 
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Su función principal es 
+            establecer conexiones con otros servidores, independientemente de la seguridad.
+        </button>
+        <button class="botonpreguntas" onclick="cambiarColorincorrecta(this)">
+            Un dispositivo que nos permite compartir información entre servidores 
+        </button>
+        <br>
+        <br>
+        <br>
+        <h2>¿Te has dado cuenta?</h2>
+        <br>
+        <br>
+    </div>
+</section>
+    <footer>
+        <p><b>AUTORES</b><br><br>
+        Luis Hidalgo<br>
+        David Pelaez<br>
+        Alejandro Quintero<br>
+        Antonio Jesus Reyes<br>
+        Rafael Lopez</p>
+     </div>
+        <a href="https://www.instagram.com/sistemasinformaticos/"><img src="../images/instagram.png" alt="logo_instagram"></a>
+        <a href="https://www.facebook.com/SistemasInformaticos/"><img src="../images/facebook.png" alt="logo_facebook"></a>
+        <figure>
+        <a href="https://fp-oficial.medac.es/formacion-profesional?lead_source=PAID&utm_campaign=1421640621&utm_source=Google_g_c&utm_content=571949623121&utm_term=e_medac&adgrp=55515204883&adpos=&extension=&locphisical=1005411&placement=&utm_medium=Ads&Piloto=1116&gad_source=1&gclid=Cj0KCQiAw6yuBhDrARIsACf94RUwh1k6sHb1wfpA4sKNA4BEa_cd0VE9vtreZpr32cj9Osz5d720IuEaAl6tEALw_wcB">
+        <img src="../images/medac.png" id="logo_medac" alt="logo_medac"></a> 
+        </figure>
+    </footer>
+
+</body>
+</html>
+

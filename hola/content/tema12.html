@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Luis Hidalgo Santiago">
+    <meta content="Interconexiones de redes, informatica, sistemas informaticos">
+    <link rel="stylesheet" href="../css/content.css">
+    <title>Interconexiones de redes</title>
+</head>
+<body>
+<!--?---------------------------------------------HEADER----------------------------------------------->
+    <header>
+        <img class="logo" src="../images/fondointerconexiones.png" alt="logo">
+        <p id="cabecera">Conoce todo sobre las interconexiones de redes </p>
+    </header>
+<!--?----------------------------------------------NAVEGADOR----------------------------------------------->
+ <nav class="navbar">
+    <a href="../index.html">INICIO</a>
+    <a href="tema09.html">REDES INFORMATICAS</a>
+    <a href="tema10.html">DIRECCIONES DE RED</a>
+    <a href="tema11.html">CONFIGURACION DE REDES</a>
+    <a href="tema11_2.html">DNS Y DHCP</a>
+    <a href="tema12.html" id="resaltado">INTERCONEXIONES DE REDES</a>
+</nav>
+    
+<!--?----------------------------------------------MAIN----------------------------------------------->
+    <main>
+
+<!--?---------------------------------------------OBJETIVO DE LA PÁGINA----------------------------------------------->
+        <section>
+            <article id="principal">
+                <h3>OBJETIVO</h3>
+                <p>
+                    - Conocer el funcionamiento de los equipos que se utilizan en redes cableadas e  inalámbricas. <br><br>
+                    - Configurar dispositivos de red a través de comandos. <br><br>
+                    - Entender el proceso de actuación para resolver problemas de conectividad. Aplicar medidas de seguridad a las redes inalámbricas
+                </p>
+            </article>
+        </section>
+<!--?--------------------------------------------PDU PROTOCOL-------------------------------------------->
+        <section class="fondomid">
+            <figure>
+                <img class="centro" src="../images/interconexiones.png" alt="tokyo">
+            </figure>
+            </section>
+            <section>
+            <article id="principal">
+            <h3>PDU Protocol Data Unit </h3>
+            <br>
+            <p> - Capa Física (Capa 1):  La PDU en la Capa Física es simplemente el bit. No hay un nombre específico para esta unidad, ya que la Capa Física se 
+                ocupa de la transmisión de bits sin estructura adicional. <br><br>
+                - Capa de Enlace de Datos (Capa 2):  En la Capa de Enlace de Datos, la PDU se llama "trama" (frame). Una trama es un paquete de datos que 
+                incluye tanto la información de la capa de red como la información de control de la capa de enlace. Las direcciones MAC de origen y destino 
+                están presentes en la trama de Capa 2. <br><br>
+                - Capa de Red (Capa 3):  En la Capa de Red, la PDU se llama "paquete" (packet). Un paquete incluye datos de la capa de transporte, así 
+                como información de enrutamiento, como direcciones IP de origen y destino. <br><br>
+                - Capa de Transporte (Capa 4):  En la Capa de Transporte, la PDU se llama "segmento" (segment). Un segmento es una unidad de datos que incluye 
+                información de control de flujo y de secuencia. Los protocolos de la Capa 4, como TCP (Transmission Control Protocol) y UDP (User Datagram Protocol), 
+                trabajan con segmentos. <br><br>
+                - Capa de Sesión (Capa 5), Capa de Presentación (Capa 6), y Capa de Aplicación (Capa 7):  En estas capas superiores, la PDU se llama simplemente 
+                "datos" (data). Los datos son el contenido de la comunicación que se está transmitiendo.
+            </p>
+        </article>
+        </section>
+<!--?---------------------------------------------ENCAPSULACION DE DATOS----------------------------------------------->
+        <section id="imagenes">
+            <h2>ENCAPSULACIÓN DE DATOS</h2>
+            <h5></h5>
+            <figure><img class="centro" src="../images/encapsulacion.png" alt="encapsulacion"></figure>
+            <figcaption>Es una técnica usas en la transmisión de datos consistente en añadir información en cada capa
+            </figcaption>
+
+        </section>
+    <!--?---------------------------------------------PROCESO DE ENCAPSULACION----------------------------------------------->
+        <section class="fondomid">
+            <h2>PROCESO DE ENCAPSULACIÓN</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e2ZuDct7-K8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+
+<!--?---------------------------------------------SWITCH----------------------------------------------->
+ <section id="imagenes">
+    <h2>SWITCHES</h2>
+    <figure><img class="centro" src="../images/switch.png" alt="encapsulacion"></figure>
+    <figcaption>Dispositivo digital lógico de interconexión de equipos que opera en la capa 2 -Enlace de datos- del modelo OSI. 
+        Su función es interconectar dos o más host. <br><br>
+        - Identifican Hosts, puertos y MAC. <br>
+        - Crean Tablas dinámicas MAC. <br>
+        - Permiten varios dispositivos al mismo puerto. <br>
+        - Unidifusión, multidifusión y difusión. <br><br>
+        Hay unos switches que trabajan en capa 2 y capa 3
+    </figcaption>
+</section>
+
+<!--?---------------------------------------------ROUTERS----------------------------------------------->
+ <section id="imagenes">
+    <h2>ROUTERS</h2>
+    <h5></h5>
+    <figure><img class="centro" src="../images/router.png" alt="encapsulacion"></figure>
+    <figcaption>Dispositivo digital lógico de interconexión de equipos que opera en capa3 -capa de red- del modelo OSI. Su función es:
+        Conectar redes entre sí.
+        Determinar el camino más adecuado entre los hosts
+         <br><br>
+         - Usan tablas de encaminamiento. <br>
+         - Usan direcciones IP (Direcciones lógicas). <br>
+         - Usan la <a href="https://community.cisco.com/t5/documentos-routing-y-switching/distancia-administrativa/ta-p/3201864">distancia administrativa</a>.<br>
+
+        - Identifican Hosts, puertos y MAC. <br>
+        - Crean Tablas dinámicas MAC. <br>
+        - Permiten varios dispositivos al mismo puerto. <br>
+        - Unidifusión, multidifusión y difusión. <br><br>
+        Hay unos switches que trabajan en capa 2 y capa 3
+    </figcaption>
+</section>
+
+<!--?---------------------------------------------FIREWALL----------------------------------------------->
+<section>
+    <article id="principal">
+    <h3>FIREWALL </h3>
+    <br>
+    <p> Un firewall es un dispositivo o software diseñado para proteger una red informática controlando y filtrando el tráfico que entra y sale de la red. Su función principal es establecer políticas de seguridad para prevenir o permitir el paso de datos basándose en ciertos criterios. <br>
+        - Filtrado de Tráfico: Un firewall examina el tráfico de red y toma decisiones basadas en reglas predefinidas. Puede permitir o bloquear paquetes de datos según criterios como direcciones IP, puertos, protocolos y tipos de aplicaciones. <br>
+        - Control de Acceso:  Establece políticas de control de acceso para determinar qué dispositivos o usuarios tienen permitido acceder a la red y a qué servicios. Puede incluir reglas de acceso basadas en direcciones IP, rangos de direcciones, o usuarios específicos. <br>
+        - Filtrado de Contenido:  para bloquear sitios web maliciosos o no deseados. <br>
+        - Prevención de Intrusiones (IPS): Algunos firewalls incorporan funciones de Prevención de Intrusiones (IPS) para detectar y bloquear ataques en tiempo real. <br>
+        - Registro y Auditoría: Lleva a cabo el registro de eventos y actividades de la red, lo que facilita la auditoría y el monitoreo de la seguridad. <br>
+        - Firewalls de Aplicaciones:  Algunos firewalls están diseñados para inspeccionar y controlar el tráfico a nivel de aplicación, permitiendo políticas más granulares para aplicaciones específicas. <br>
+    </p>
+</article>
+</section>
+
+<!--?---------------------------------------------REDES INALAMBRICAS----------------------------------------------->
+ <section>
+    <article id="principal">
+    <h3>REDES INALÁMBRICAS WLAN </h3>
+    <br>
+    <p> - SSID (Service Set Identifier) es un nombre único que identifica a una red inalámbrica. No proporciona seguridad por si mismo, puede ser ocultado. <br>
+        - Seguridad Wi-Fi: Las WLAN implementan medidas de seguridad como encriptación (WPA2 o WPA3), protegidas por contraseñas. <br>
+        - Bandas de Frecuencia:  Operan bandas de frecuencia, como 2.4 GHz y 5 GHz. <br>
+        - La banda de 5 GHz generalmente ofrece velocidades más altas, pero la de 2.4 GHz tiene un alcance más amplio. <br>
+        - Canales. Cada frecuencia se divide en canales. La selección del canal correcto es importante para evitar  posibles interferencias. <br>
+        - Estándares Wi-Fi: Los estándares Wi-Fi, como 802.11ac y 802.11ax, definen las características y velocidades de las redes inalámbricas. <br>
+        - Amplificadores o extensores de rango: extienden la señal de red a áreas más grandes o con obstáculos. 
+    </p>
+</article>
+</section>
+<!--?---------------------------------------------FIN DEL MAIN----------------------------------------------->
+</main>
+<!--?--------------------------------------------FOOTER----------------------------------------------->
+<footer>
+    <p><b>AUTORES</b><br><br>
+    Luis Hidalgo<br>
+    David Pelaez<br>
+    Alejandro Quintero<br>
+    Antonio Jesus Reyes<br>
+    Rafael López</p>
+ </div>
+    <a href="https://www.instagram.com/sistemasinformaticos/"><img src="../images/instagram.png" alt="logo_instagram"></a>
+    <a href="https://www.facebook.com/SistemasInformaticos/"><img src="../images/facebook.png" alt="logo_facebook"></a>
+    <figure>
+    <a href="https://fp-oficial.medac.es/formacion-profesional?lead_source=PAID&utm_campaign=1421640621&utm_source=Google_g_c&utm_content=571949623121&utm_term=e_medac&adgrp=55515204883&adpos=&extension=&locphisical=1005411&placement=&utm_medium=Ads&Piloto=1116&gad_source=1&gclid=Cj0KCQiAw6yuBhDrARIsACf94RUwh1k6sHb1wfpA4sKNA4BEa_cd0VE9vtreZpr32cj9Osz5d720IuEaAl6tEALw_wcB">
+    <img src="../images/medac.png" id="logo_medac" alt="logo_medac"></a> 
+    </figure>
+</footer>
+</body>
