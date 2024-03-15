@@ -1,0 +1,1 @@
+/concesionario/coche[color="Azul" and color/@metalizado="S"]/marca/text()
