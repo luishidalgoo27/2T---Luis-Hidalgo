@@ -1,0 +1,53 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+      <titulo>El Principito</titulo>
+      <autor>Antoine de Saint-Exupéry</autor>
+      <precio>20</precio>
+    </libro>
+    <libro>
+      <titulo>El Gran Gatsby</titulo>
+      <autor>F. Scott Fitzgerald</autor>
+      <precio>45</precio>
+    </libro>
+    <libro>
+      <titulo>Cien Años de Soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <precio>60</precio>
+    </libro>
+    <libro>
+      <titulo>Don Quijote de la Mancha</titulo>
+      <autor>Miguel de Cervantes</autor>
+      <precio>30</precio>
+    </libro>
+    <libro>
+      <titulo>Harry Potter y la Piedra Filosofal</titulo>
+      <autor>J.K. Rowling</autor>
+      <precio>25</precio>
+    </libro>
+    <libro>
+      <titulo>Moby Dick</titulo>
+      <autor>Herman Melville</autor>
+      <precio>55</precio>
+    </libro>
+    <libro>
+      <titulo>Orgullo y Prejuicio</titulo>
+      <autor>Jane Austen</autor>
+      <precio>40</precio>
+    </libro>
+    <libro>
+      <titulo>1984</titulo>
+      <autor>George Orwell</autor>
+      <precio>50</precio>
+    </libro>
+    <libro>
+      <titulo>Las Crónicas de Narnia</titulo>
+      <autor>C.S. Lewis</autor>
+      <precio>35</precio>
+    </libro>
+    <libro>
+      <titulo>Fundación</titulo>
+      <autor>Isaac Asimov</autor>
+      <precio>70</precio>
+    </libro>
+  </libreria>
