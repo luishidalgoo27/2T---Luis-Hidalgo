@@ -1,0 +1,2 @@
+for $x at $i in /concesionario/coche
+return <vehiculo>{$i} - {$x/marca/text()} </vehiculo>

@@ -1,0 +1,10 @@
+(: Lo mismo metido en html:)
+<html>
+{for $x in /concesionario/coche
+return
+if ($x/color/@metalizado="N") then 
+     <p>{$x/marca/text()}-{$x/marca/@modelo/data()}-Metalizado) </p>
+      else
+     <p>{$x/marca/text()}-{$x/marca/@modelo/data()}-No metalizado)</p>
+} 
+</html>

@@ -1,0 +1,12 @@
+declare variable $descuento :=20;
+<oferta_vehiculos>
+{for $x in //coche
+return
+  <coche>
+    <marca>{$x/marca/text()}</marca>
+    <modelo>{$x/marca/@modelo/data()}</modelo>
+    <precio_descuento>{round($x/precio*(100-$descuento) div 100)}</precio_descuento>
+   </coche>
+}
+</oferta_vehiculos>
+

@@ -1,0 +1,10 @@
+declare variable $color:="Amarillo";
+if(//coche/color=$color) 
+then
+  <resultado>
+       Hay {count(//coche[color=$color])} coches  {$color}
+</resultado>
+else
+    <resultado>
+    No existen coches de ese color
+</resultado>

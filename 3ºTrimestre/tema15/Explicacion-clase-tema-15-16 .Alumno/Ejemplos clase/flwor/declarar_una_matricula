@@ -1,0 +1,11 @@
+declare variable $matricula_a_buscar:="672KPC";
+if(//coche/@matricula=$matricula_a_buscar) 
+then
+    <resultado>
+       {//coche[@matricula=$matricula_a_buscar]/marca}
+</resultado>
+else
+    <resultado>
+    No existe esa matrícula
+</resultado>
+

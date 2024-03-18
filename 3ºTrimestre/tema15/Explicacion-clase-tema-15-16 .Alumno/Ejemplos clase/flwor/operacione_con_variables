@@ -1,0 +1,10 @@
+declare variable $a :=10;
+declare variable $b :=3; 
+<operaciones>
+<suma> {$a + $b} </suma>
+<resta> {$a - $b} </resta>     
+<multiplicacion> {$a * $b}
+</multiplicacion>     
+<division> {$a div $b} </division>
+<resto> {$a mod $b} </resto>
+</operaciones>
