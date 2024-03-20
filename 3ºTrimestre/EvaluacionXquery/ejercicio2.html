@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<link rel="stylesheet" href="ejercicio2.css">
+<h1> Informe pokemons </h1>
+<h2> Estadísticas </h2>
+<div class="flex-container">
+  <div>Total <br> 
+  {count(//pokemon)}</div>
+  <div>Fuerza media <br> 
+  {avg(//estado/fuerza)}</div>
+  <div>Nivel máximo <br>
+  {max(//estado/nivel)}</div>
+  <div>Total puntos vida <br> 
+  {sum(//estado/puntosVida)}</div>
+  <div>Pokemon de mayor nivel <br> 
+  {max(//estado/nivel)}</div>
+</div>
+<h2> Cantidad de Pokemon agrupados por tipo</h2>
+De planta hay: 
+{count(//pokemon/@tipo = "planta")} <br>
+De fuego hay:  
+{count(//pokemon/@tipo = "fuego")} <br>
+De agua hay: 
+{count(//pokemon/@tipo = "agua")} <br>
+De tierra hay: 
+{count(//pokemon/@tipo = "tierra")}
+</html>
