@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Cableado</title>
+        <link>http://www.webmalayadesign.es/rss/cableado_sala.rss</link>
+        <description>Lista de material para realizar el cableado de la sala de 
+            informática.</description>
+        <language>es</language>
+        <copyright>Federico Huercano Ruiz</copyright>
+        <pubDate>Wed, 19 Aug 2020 20:35:00 GMT</pubDate>
+        <lastBuildDate>Wed, 19 Aug 2020 20:35:00 GMT</lastBuildDate>
+        <category>Redes</category>
+        <image>
+            <url>http://www.webmalagadesign.es/rss/cableado.jpg</url>
+            <title>Cableado</title>
+            <link>http://www.webmalagadesign.es/rss/cableado_sala.rss</link>
+            <description>Cableado de la sala de informática</description>
+        </image>
+        <item>
+            <title>Conectores RJ45</title>
+            <description>Uno de los conectores principales utilizados con tarjetas de red Ethernet transmite información a través de cables par trenzado.</description>
+            <enclosure url="http://www.webmalagadesign.es/rss/145.jpg" length="14383" type="image/jpeg" />
+            <guid>http://www.webmalagadesign.es/rss/145.jpg</guid>
+            <pubDate>Wed, 19 Aug 2020 20:30:00 GMT</pubDate>
+            <link>http://www.webmalagadesign.es/proyectos.html</link>
+        </item>
+        <item>
+            <title>Cable (UIP) Categoria 5</title>
+            <description>Tipo de cableado más solicitado. Es un estándar dentro de las comunicaciones de redes Lall</description>
+            <enclosure url="http://www.webmalagadesign.es/css/utp.jpg" length="22345" type="image/jpeg" />
+            <guid>http://www.webmalagadesign.es/css/utp.jpg</guid>
+            <pubDate>Wed, 19 Aug 2020 20:34:00 GMT</pubDate>
+            <link>http://www.webmalagadesign.es</link>
+        </item>
+        <item>
+            <title>Crimpadora</title>
+            <description>Nos permite cortar los cables, y crimpar los terminales RJ45.</description>
+            <enclosure url="http://www.webmalagadesign.es/raa/crimpadora.jpg" length="22345" type="image/jpeg" />
+            <guid>http://www.webmalagadesign.es/raa/crimpadora.jpg</guid>
+            <pubDate>Wed, 19 Aug 2020 20:35:00 GMT</pubDate>
+            <link>http://www.webmalagadesign.es</link>
+        </item>
+    </channel>
+</rss>
