@@ -1,0 +1,36 @@
+.tablero {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .casilla {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  .jugador1 {
+    background-image: url(jugador1.png);
+  }
+
+  .jugador2 {
+    background-image: url(jugador2.png);
+  }
+
+  button {
+    align-items: center;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+  .turno {
+    text-align: center;
+  }
